@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="iPhoneアプリ「モノカルテ」のプライバシーポリシー">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>モノカルテ プライバシーポリシー</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --bg: #faf7f1;
+    --surface: #ffffff;
+    --surface-line: #e7ded0;
+    --ink: #20302c;
+    --ink-soft: #52625c;
+    --ink-faint: #8a978f;
+    --teal: #0f6b62;
+    --teal-deep: #0a4a44;
+    --teal-wash: #e4efec;
+    --coral: #d9613f;
+    --coral-wash: #fbe9e2;
+    --font-display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
+    --font-body: "Noto Sans JP", "Hiragino Sans", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #14201d;
+      --surface: #1a2925;
+      --surface-line: #2a3d37;
+      --ink: #eef3f0;
+      --ink-soft: #b6c4bd;
+      --ink-faint: #7d8d86;
+      --teal: #4fb3a6;
+      --teal-deep: #bfe9e1;
+      --teal-wash: #1f3733;
+      --coral: #e98a6c;
+      --coral-wash: #3a2620;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #14201d;
+    --surface: #1a2925;
+    --surface-line: #2a3d37;
+    --ink: #eef3f0;
+    --ink-soft: #b6c4bd;
+    --ink-faint: #7d8d86;
+    --teal: #4fb3a6;
+    --teal-deep: #bfe9e1;
+    --teal-wash: #1f3733;
+    --coral: #e98a6c;
+    --coral-wash: #3a2620;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.85;
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+  main{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .mark{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom: 28px;
+  }
+  .mark svg{ width:44px; height:44px; flex-shrink:0; }
+  .mark .name{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--teal-deep);
+    letter-spacing: .02em;
+  }
+  .mark .sub{
+    font-size: .78rem;
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    letter-spacing: .04em;
+  }
+
+  header.hero{
+    border-bottom: 1px solid var(--surface-line);
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+  }
+  h1{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 5vw, 2.15rem);
+    color: var(--ink);
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px 20px;
+    font-size: .85rem;
+    color: var(--ink-soft);
+  }
+  .meta span{ font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-faint); }
+
+  .lede{
+    background: var(--teal-wash);
+    border: 1px solid var(--surface-line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    color: var(--ink);
+    font-size: .96rem;
+    margin-bottom: 36px;
+  }
+  .lede strong{ color: var(--teal-deep); }
+
+  section{
+    margin-bottom: 34px;
+  }
+  section h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--teal-deep);
+    display:flex;
+    align-items:baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  section h2 .num{
+    font-family: var(--font-mono);
+    font-size: .78rem;
+    color: var(--coral);
+    background: var(--coral-wash);
+    border-radius: 999px;
+    padding: 3px 9px;
+    font-variant-numeric: tabular-nums;
+  }
+  section p{ margin: 0 0 12px; color: var(--ink); max-width: 62ch; }
+  section p.soft{ color: var(--ink-soft); font-size: .92rem; }
+  section ul{ margin: 0 0 12px; padding-left: 1.3em; }
+  section li{ margin-bottom: 8px; max-width: 60ch; }
+  section li::marker{ color: var(--teal); }
+
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .card + .card{ margin-top: 12px; }
+  .card .label{
+    font-family: var(--font-mono);
+    font-size: .72rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 4px;
+  }
+  .card .value{ color: var(--ink); font-size: .95rem; }
+
+  a{ color: var(--teal); text-decoration-color: var(--surface-line); text-underline-offset: 3px; }
+  a:hover{ text-decoration-color: var(--teal); }
+
+  .contact{
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 16px;
+    padding: 24px;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    align-items:center;
+    justify-content: space-between;
+  }
+  .contact .who{ font-family: var(--font-display); font-weight:700; font-size:1.05rem; }
+  .contact .mail{
+    font-family: var(--font-mono);
+    font-size: .95rem;
+    color: var(--teal-deep);
+    background: var(--teal-wash);
+    padding: 8px 14px;
+    border-radius: 999px;
+  }
+
+  footer{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--surface-line);
+    color: var(--ink-faint);
+    font-size: .8rem;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  @media (max-width: 480px){
+    .contact{ flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">
+    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="2" y="2" width="40" height="40" rx="11" fill="#0E0F11"/>
+      <g transform="rotate(-12 22 22)">
+        <path d="M14 18h17a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H14l-6-6z" fill="#FF6A3D"/>
+        <circle cx="14" cy="24" r="1.8" fill="#0E0F11"/>
+        <rect x="19" y="21.5" width="10" height="1.8" rx=".9" fill="#0E0F11"/>
+        <rect x="19" y="25" width="7" height="1.8" rx=".9" fill="#0E0F11" opacity=".45"/>
+      </g>
+    </svg>
+    <div>
+      <div class="name">モノカルテ</div>
+      <div class="sub">com.colorofdays.monokarte</div>
+    </div>
+  </div>
+  <header class="hero">
+    <h1>プライバシーポリシー</h1>
+    <div class="meta">
+      <span>制定日 2026-10-28</span>
+      <span>開発 colorofdays(個人開発)</span>
+    </div>
+  </header>
+
+  <div class="lede">
+    <strong>要点:</strong> モノカルテは、家電などの保証書・レシート・取扱説明書をまとめて保管するiPhoneアプリです。アカウント登録は不要で、広告や解析ツールは使っていません。登録した内容は、お使いのiPhoneの中と、「iCloudで同期・バックアップ」をオンにした場合はご自身のiCloudにだけ保存され、開発者が見たり受け取ったりすることはありません。
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>基本方針</h2>
+    <p>colorofdays(個人開発。以下「開発者」)は、iPhoneアプリ「モノカルテ」(以下「本アプリ」)を通じて、利用者の個人情報やアプリの利用状況を収集しません(08に記載するAppleの仕組みによるものを除きます)。開発者は独自のサーバーを持たず、利用者が登録したデータを開発者が見たり受け取ったりすることはできません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>本アプリで扱う情報と保存場所</h2>
+    <p>本アプリでは、利用者が入力・選択した次の情報を扱います。</p>
+    <ul>
+      <li>モノの情報:名前、グループ、メーカー、型番、製造番号、購入日、購入店、購入金額、メーカー保証と長期保証の期間・終了日・番号、修理窓口の電話番号、紙の原本の有無、メモ、「手放した」の記録など</li>
+      <li>書類:保証書・レシート・製品・銘板の写真、取扱説明書などのPDF</li>
+      <li>アプリの設定:通知のタイミング、並び順、iCloud同期のオン・オフなど</li>
+      <li>プレミアムを購入済みかどうかの記録(起動時の表示を素早く切り替えるため)</li>
+    </ul>
+    <p>これらの情報は、次の場所にのみ保存されます。</p>
+    <div class="card">
+      <div class="label">利用者のiPhone内</div>
+      <div class="value">すべての情報は、まずiPhoneの中に保存されます。</div>
+    </div>
+    <div class="card">
+      <div class="label">利用者自身のiCloud(オンにした場合のみ)</div>
+      <div class="value">プレミアムの「iCloudで同期・バックアップ」をオンにした場合、モノの情報と書類はAppleが提供するiCloud(CloudKitのプライベートデータベース)に保存され、同じApple Accountの端末の間で同期されます。このデータは利用者のApple Accountに属し、開発者は見ることができません。iCloudの取り扱いについては、Appleのプライバシーポリシーをご確認ください。オフの場合や、iCloudにサインインしていない場合は、iPhoneの中だけに保存されます。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>端末の権限について</h2>
+    <div class="card">
+      <div class="label">カメラ</div>
+      <div class="value">本体のシール(銘板)、保証書、レシートを撮影するためにだけ使います。撮影した画像は2に記載した場所以外には保存・送信しません。</div>
+    </div>
+    <div class="card">
+      <div class="label">写真</div>
+      <div class="value">iOS標準の写真選択画面で、利用者が選んだ写真だけを読み込みます。写真ライブラリ全体へのアクセスは求めません。取り込んだ写真に含まれる撮影場所などの位置情報は、保存時に削除します。</div>
+    </div>
+    <div class="card">
+      <div class="label">通知</div>
+      <div class="value">保証が切れる前にお知らせするために使います。通知はiPhoneの中で予約するもので、開発者のサーバーから送るものではありません。</div>
+    </div>
+    <div class="card">
+      <div class="label">ファイル</div>
+      <div class="value">取扱説明書のPDFやZIPファイルは、利用者が「ファイル」アプリや共有メニューから選んだものだけを読み込みます。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>文字の読み取り</h2>
+    <p>型番・製造番号・購入日・購入店の読み取りは、Appleの文字認識機能(Vision)を使ってiPhoneの中で行います。読み取りのために画像を外部に送信することはありません(2に記載したiCloudでの同期を除きます)。読み取った文字は候補として表示するだけで、利用者が確かめてから保存します。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>インターネットとの通信</h2>
+    <p>本アプリがインターネットと通信するのは、次の場合だけです。いずれも開発者のサーバーは経由しません。</p>
+    <ul>
+      <li>2に記載したiCloudでの同期(オンにした場合)</li>
+      <li>6に記載したApp Storeでの購入・購入の復元</li>
+    </ul>
+    <p>このほか、カルテ画面の「取説を探す」を押すと、登録したメーカー名と型番で検索するページをSafariで開きます。このとき検索語(メーカー名・型番)は検索サービス(Google)に送られ、その取り扱いは検索サービスのプライバシーポリシーに従います。設定画面のプライバシーポリシー・サポートのリンクも、Safariで開きます。修理窓口の電話番号を押すと、iPhoneの電話アプリが開きます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>アプリ内購入について</h2>
+    <p>プレミアム(買い切り)の購入は、AppleのApp Store(StoreKit)を通じて行われます。お支払い情報はAppleが管理し、開発者が氏名やクレジットカード情報などを受け取ることはありません。購入済みかどうかの確認と購入の復元も、Appleの仕組みを通じてiPhoneの中で行います。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>解析ツール・広告</h2>
+    <p>本アプリは、アクセス解析ツール、広告、トラッキングの仕組みを使っていません。他のアプリやWebサイトをまたいで利用者を追跡することもありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>診断・クラッシュデータについて</h2>
+    <p>開発者独自のクラッシュ解析ツールは組み込んでいません。ただし、利用者がiPhoneの設定で「解析データを共有」をオンにしている場合、Appleの標準的な仕組みを通じて、個人を特定しない形のクラッシュ情報が開発者に提供されることがあります。この情報は不具合の修正のためだけに使います。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>第三者への提供</h2>
+    <p>開発者は利用者の情報を収集しないため、第三者に提供することもありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>ZIP・PDFの書き出しと読み込み</h2>
+    <ul>
+      <li>設定画面の「ZIPで書き出す」で作ったファイルと、カルテ画面の「PDF書き出し」(プレミアム)で作ったPDFは、保存先や共有先を利用者自身が選ぶもので、開発者に送信されることはありません。</li>
+      <li>「ZIPから読み込む」では、利用者が選んだファイルだけを読み込みます。読み込んだ内容が開発者に送信されることはありません。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span>データの削除</h2>
+    <ul>
+      <li>モノや書類は、アプリ内でいつでも削除できます。「iCloudで同期・バックアップ」がオンの場合、アプリ内で削除したデータはiCloudからも削除されます。</li>
+      <li>本アプリを削除すると、iPhoneの中のデータは削除されます。</li>
+      <li>iCloudに保存されたデータは、iPhoneの「設定」→ 利用者名 →「iCloud」→「アカウントのストレージを管理」から削除できます。</li>
+      <li>書き出したZIPやPDFは、本アプリを削除しても残ります。必要に応じて利用者ご自身で削除してください。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">12</span>お子様のプライバシー</h2>
+    <p>本アプリは特定の年齢層を対象としたものではなく、個人情報を収集しない設計にしています。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">13</span>お問い合わせで受け取る情報</h2>
+    <p>本ポリシーや本アプリについてメールでお問い合わせいただいた場合、開発者はいただいたメールアドレスとお問い合わせの内容を受け取ります。これらは返信と不具合の修正のためだけに使い、法令に基づく場合を除き第三者に提供しません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">14</span>準拠法・開示等のご請求</h2>
+    <p>本ポリシーは日本法に基づいて解釈されるものとします。ご自身に関する情報の開示・訂正・利用停止等をご希望の場合は、16のお問い合わせ先までご連絡ください。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">15</span>プライバシーポリシーの変更</h2>
+    <p>法令の変更や機能の追加に伴い、本ポリシーの内容を変更する場合があります。変更する際は、本ページの「最終更新」日付を更新し、重要な変更についてはアプリ内でもお知らせするよう努めます。</p>
+    <p class="soft">本ポリシーは現在、日本語版のみを提供しています。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">16</span>お問い合わせ</h2>
+    <div class="contact">
+      <div>
+        <div class="who">colorofdays(モノカルテ 開発者)</div>
+        <div class="soft" style="color:var(--ink-soft); font-size:.85rem; margin-top:4px;">個人開発者(日本在住)が運営しています。本アプリに関するご質問・不具合のご連絡は下記までお願いします</div>
+      </div>
+      <div class="mail">info@colorofdays.com</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>モノカルテ プライバシーポリシー</span>
+    <span>最終更新: 2026-10-28</span>
+  </footer>
+</main>
+</body>
+</html>
